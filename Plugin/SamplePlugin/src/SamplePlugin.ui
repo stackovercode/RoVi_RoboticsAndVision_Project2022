@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SamplePlugin</class>
+ <widget class="QDockWidget" name="SamplePlugin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>476</width> <!--476-->
+    <height>479</height> <!--479-->
+   </rect>
+</property> 
+<property name="sizePolicy">
+<sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>8</horstretch> <!--8-->
+    <verstretch>0</verstretch> 
+</sizepolicy>
+</property>
+  <property name="windowTitle">
+   <string>RoVi Plugin</string>
+  </property>
+  <property name="StyleSheet">
+  <string notr="true"> QToolTip
+{
+border: 1px solid black;
+background-color: #ffa02f; <!--#ffa02f;-->
+padding: 1px;
+border-radius: 3px;
+opacity: 100;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="_btn_im">
+        <property name="text">
+         <string>Get Image</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="_btn_scan">
+        <property name="text">
+         <string>Get Scan</string>
+        </property>
+       </widget>
+      </item>
+    <item>  
+       <widget class="QPushButton" name="_btn_Pose">
+        <property name="text">
+         <string>Get image pose</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="_btn_home">
+        <property name="text">
+         <string>Move to home</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="_btn_move_default">
+        <property name="text">
+         <string>Grap test</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="_btn0">
+        <property name="text">
+         <string>Calculate Path</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="_btn1">
+        <property name="text">
+         <string>Run Path</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="_btn2">
+        <property name="text">
+         <string>Go near pick</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="_btn3">
+        <property name="text">
+         <string>Go pick</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="_btn4">
+        <property name="text">
+         <string>Test liInt</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="_spinBox"/>
+      </item>
+      <item>
+       <widget class="QSlider" name="_slider">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <!-- <item>
+       <widget class="QPushButton" name="_btnStart">
+        <property name="start_grap">
+         <string>Start sequence</string>
+        </property>
+       </widget>
+      </item>
+      </item> -->
+      <item> 
+       <widget class="QPushButton" name="_btnStop">
+        <property name="text">
+         <string>Stop</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="_btnRestart">
+        <property name="text">
+         <string>Restart sequence</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="_btnNextFrame">
+        <property name="text">
+         <string>Next frame</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="_label">
+        <property name="text">
+         <string>Label</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

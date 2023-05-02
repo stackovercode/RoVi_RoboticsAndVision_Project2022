@@ -1,0 +1,137 @@
+<WorkCell name="Scene">
+
+	<Frame name="Table" refframe="WORLD" type="Fixed">
+		<RPY>0 0 0</RPY>
+		<Pos>0 0 -0.1</Pos>
+		<Drawable name="Table" refframe="Table">
+			<Polytope file="table/Sigmund_table" />
+		</Drawable>
+	</Frame>
+
+	<Frame name="URReference" refframe="Table" type="Movable">
+		<RPY>0 0 0</RPY>
+		<Pos>0 0 0.11</Pos>
+	</Frame>
+	<Include file="UR5/UR-6-85-5-A/Device.wc.xml" />
+
+	<!-- x was -0.0134 and z pos was 0 and x was 0-->
+	<!--insert gripper definition wsg50-->
+	<Frame name="Tool" refframe="UR-6-85-5-A.TCP">
+		<RPY> 0 0 0 </RPY> <Pos> 0 0 0.072 </Pos> <!-- 180 0 0 -->
+	</Frame>
+	<Include file="wsg50/wsg50.xml"/>
+
+	<Frame name="GraspTCP" refframe="UR-6-85-5-A.TCP" type="Fixed">
+		<RPY>0 0 0</RPY>
+		<Pos>0 0 0.15</Pos>
+	</Frame>
+
+	<!-- <Frame name="Bottle" refframe="Table" type="Movable" daf="true">
+		<RPY> -90 0 90 </RPY>
+		<Pos> 0 0.474 0.21 </Pos>
+		<Drawable name="Bottle" refframe="Bottle">
+			<Polytope file="parts/bottle" />
+		</Drawable>
+	</Frame> 
+ 
+	<Frame name="Square" refframe="Table" type="Movable" daf="true">
+		<RPY> -90 0 90 </RPY>
+		<Pos> 0.25 0.474 0.150</Pos>
+		<Drawable name="Square" refframe="Square">
+			<Polytope file="parts/square" />
+		</Drawable>
+	</Frame>  -->
+
+	<!-- <Frame name="Cylinder" refframe="Table" type="Movable" daf="true">
+		<RPY> 0 0 0 </RPY>
+		<Pos> -0.34 0.54 0.15</Pos> 
+		 <Property name="ShowFrameAxis">true</Property> 
+		<Drawable name="Cylinder" refframe="Cylinder">
+			<RGB> 0.0 0.2 0.4 1.0 </RGB>
+			<Polytope file="parts/cylinder" />
+		</Drawable>
+	</Frame> -->
+<!-- 
+	<Frame name="Cylinder2" refframe="Table" type="Movable" daf="true">
+		<RPY> -90 0 180 </RPY>
+		<Pos> 0.0 0.54 0.15</Pos>	
+		<Drawable name="Cylinder" refframe="Cylinder">
+			<Polytope file="parts/cylinder" />
+		</Drawable>
+	</Frame>
+
+	<Frame name="Cylinder3" refframe="Table" type="Movable" daf="true">
+		<RPY> -90 0 180 </RPY>
+		<Pos> 0.34 0.54 0.15</Pos>
+		<Drawable name="Cylinder" refframe="Cylinder">
+			<Polytope file="parts/cylinder" />
+		</Drawable>
+	</Frame>
+
+	<Frame name="Cylinder4" refframe="Table" type="Movable" daf="true">
+		<RPY> -90 0 180 </RPY>
+		<Pos> 0.3 -0.50 0.15</Pos>
+		<Drawable name="Cylinder" refframe="Cylinder">
+			<Polytope file="parts/cylinder" />
+		</Drawable>
+	</Frame> -->
+
+	<Frame name="Ball" refframe="Table"  type="Movable" daf="true">
+		<RPY> 0 0 0 </RPY> 
+		<Pos> -0.18 0.40 0.155 </Pos> 
+		<Drawable name="Ball" refframe="Ball">
+			<RGB> 0.0 1.0 0.0 1.0 </RGB>
+			<Polytope file="parts/ball" />
+		</Drawable>
+	</Frame>
+
+	<!-- <Frame name="Trex" refframe="Table"  type="Movable" daf="true">
+			<RPY> 0 0 0 </RPY> 
+			<Pos> 0.20 0.40 0.11 </Pos> 
+		<Drawable name="Trex" refframe="Trex">
+			<RGB> 0.0 0.9 0.0 1.0 </RGB>
+			<Polytope file="parts/dino" />
+		</Drawable>
+	</Frame> -->
+
+	<!-- Top grip-->
+	<!-- Side grip / -90 is good for pick and 90 is good for place-->
+	<Frame name="GraspTarget" refframe="Ball" type="Movable">
+		<RPY> 0 0 180 </RPY> <Pos> 0 0 0 </Pos>
+	</Frame>
+
+
+	<!-- Cameras -90 0 90  -->
+	<!-- <Frame name="Camera_Right" refframe="WORLD" type="Movable">
+		<Pos>-0.2 1.033 1.325</Pos>
+		<RPY>0 0 -20</RPY>
+		<Property name="Camera" desc="[fovy,width,height]">50 640 480</Property>
+	</Frame>
+	<Frame name="Camera_Left" refframe="WORLD" type="Movable">
+		<Pos>0.2 1.033 1.325</Pos>
+		<RPY>0 0 -20</RPY>
+		<Property name="Camera" desc="[fovy,width,height]">50 640 480</Property>
+	</Frame> -->
+
+	<Frame name="Camera_Right" refframe="WORLD" type="Movable">
+		<Pos>0.10 1.2 0.5</Pos>
+		<RPY>0 0 -60</RPY>
+		<Property name="Camera" desc="[fovy,width,height]">50 640 480</Property>
+	</Frame>
+	<Frame name="Camera_Left" refframe="WORLD" type="Movable">
+		<Pos>-0.10 1.2 0.5</Pos>
+		<RPY>0 0 -60</RPY>
+		<Property name="Camera" desc="[fovy,width,height]">50 640 480</Property>
+	</Frame>
+
+
+	<!-- 
+	<Frame name="Scanner25D" refframe="WORLD" type="Movable">
+		<Pos>0 1.033 1.325</Pos>
+		<RPY>0 0 -25</RPY>
+		<Property name="Scanner25D" desc="[fovy,width,height]">50 640 480</Property>
+	</Frame> -->
+
+	<CollisionSetup file="SceneCollisionSetup.prox.xml" />
+
+</WorkCell>
