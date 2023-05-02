@@ -1,0 +1,3 @@
+/home/rovi2022/projects/RoVi_Project/camereaImageMaker/src/build/CMakeFiles/getCameraView.dir
+/home/rovi2022/projects/RoVi_Project/camereaImageMaker/src/build/CMakeFiles/edit_cache.dir
+/home/rovi2022/projects/RoVi_Project/camereaImageMaker/src/build/CMakeFiles/rebuild_cache.dir
